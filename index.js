@@ -1,9 +1,9 @@
-import coffeeStock from "./state.js";
-
-const displayStock = stock => {
-    for (const type in stock) {
-        console.log(type);
-    }
-}
-
-displayStock(coffeeStock);
+import { coffeeStock, isCoffeeMachineReady } from './state.js';
+ 
+console.log(coffeeStock);
+console.log(isCoffeeMachineReady);
+ 
+/* output
+{ arabica: 100, robusta: 150, liberica: 200 }
+true
+*/
